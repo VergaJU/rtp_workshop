@@ -12,7 +12,7 @@ jobs:
   test:
     name: Run workflow tests
     # Only run on push if this is the nf-core dev branch (merged PRs)
-    if: ${{ github.event_name != 'push' || (github.event_name == 'push' && github.repository == 'BarryDigby/rtp_workshop') }}
+    if: ${{ github.event_name != 'push' || (github.event_name == 'push' && github.repository == 'VergaJU/rtp_workshop') }}
     runs-on: ubuntu-latest
     env:
       NXF_VER: ${{ matrix.nxf_ver }}
@@ -34,13 +34,13 @@ jobs:
 
       - name: Build new docker image
         if: env.MATCHED_FILES
-        run: docker build --no-cache . -t barryd237/test:dev
+        run: docker build --no-cache . -t vergaju/test:dev
 
       - name: Pull docker image
         if: ${{ !env.MATCHED_FILES }}
         run: |
-          docker pull barryd237/test:dev
-          docker tag barryd237/test:dev barryd237/test:dev
+          docker pull vergaju/test:dev
+          docker tag vergaju/test:dev vergaju/test:dev
 
       - name: Install Nextflow
         env:
