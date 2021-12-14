@@ -1,0 +1,4 @@
+2021-12-14 10:05:00	1.1s	golden_tuckerman	OK	9251038838ed2a3b63ce0f6feb7f11a3	0301ae93-94f0-4c6a-8ada-4c96f6eb18bc	nextflow test.nf
+2021-12-14 10:15:33	-	reverent_wozniak	-	c8745128c33337572bf143b0d0e91b09	95753467-99cc-470b-a051-bb2339ffe153	nextflow test.nf
+2021-12-14 10:16:07	1.1s	maniac_pare	OK	cf0380f2cd9b341894530bfa90d7b015	72bb978c-b54a-461a-a322-00c6542f2b04	nextflow test.nf
+2021-12-14 10:18:28	833ms	jovial_fourier	OK	fa26e1eee230c0602f275647a4d3f856	8526694d-1b4c-483c-bc27-f3c938b9f085	nextflow test.nf

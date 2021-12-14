@@ -1,0 +1,43 @@
+Dec-14 10:05:00.215 [main] DEBUG nextflow.cli.Launcher - $> nextflow test.nf
+Dec-14 10:05:00.253 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.04.1
+Dec-14 10:05:00.269 [main] INFO  nextflow.cli.CmdRun - Launching `test.nf` [golden_tuckerman] - revision: 9251038838
+Dec-14 10:05:00.304 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/jacopo/.nextflow/plugins
+Dec-14 10:05:00.305 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Dec-14 10:05:00.306 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins local root: .nextflow/plr/empty
+Dec-14 10:05:00.311 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Dec-14 10:05:00.311 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Dec-14 10:05:00.313 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Dec-14 10:05:00.318 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Dec-14 10:05:00.343 [main] DEBUG nextflow.Session - Session uuid: 0301ae93-94f0-4c6a-8ada-4c96f6eb18bc
+Dec-14 10:05:00.344 [main] DEBUG nextflow.Session - Run name: golden_tuckerman
+Dec-14 10:05:00.345 [main] DEBUG nextflow.Session - Executor pool size: 8
+Dec-14 10:05:00.362 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.04.1 build 5556
+  Created: 14-05-2021 15:20 UTC (16:20 IST)
+  System: Linux 5.11.0-41-generic
+  Runtime: Groovy 3.0.7 on OpenJDK 64-Bit Server VM 11.0.11+9-Ubuntu-0ubuntu2.20.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 68291@Latitude [127.0.1.1]
+  CPUs: 8 - Mem: 31.1 GB (4.1 GB) - Swap: 2 GB (2 GB)
+Dec-14 10:05:00.376 [main] DEBUG nextflow.Session - Work-dir: /home/jacopo/Documents/RTP/nextflow/test/work [ext2/ext3]
+Dec-14 10:05:00.376 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jacopo/Documents/RTP/nextflow/test/bin
+Dec-14 10:05:00.381 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Dec-14 10:05:00.388 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Dec-14 10:05:00.468 [main] DEBUG nextflow.Session - Session start invoked
+Dec-14 10:05:00.818 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Dec-14 10:05:00.824 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: TEST
+Dec-14 10:05:00.826 [main] INFO  nextflow.script.BaseScript - 6
+Dec-14 10:05:00.869 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-14 10:05:00.869 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-14 10:05:00.871 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Dec-14 10:05:00.875 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=31.1 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Dec-14 10:05:00.945 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Dec-14 10:05:00.945 [main] DEBUG nextflow.Session - Session await
+Dec-14 10:05:01.010 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-14 10:05:01.013 [Task submitter] INFO  nextflow.Session - [eb/5320e3] Submitted process > TEST
+Dec-14 10:05:01.027 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: TEST; status: COMPLETED; exit: 0; error: -; workDir: /home/jacopo/Documents/RTP/nextflow/test/work/eb/5320e32ad6f102ebdc726bcbe5fcda]
+Dec-14 10:05:01.032 [main] DEBUG nextflow.Session - Session await > all process finished
+Dec-14 10:05:01.032 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Dec-14 10:05:01.040 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=3ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Dec-14 10:05:01.087 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Dec-14 10:05:01.098 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
