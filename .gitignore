@@ -6,3 +6,4 @@ fastqc/
 .nextflow/
 foobar.txt
 results/
+dummy_files/
