@@ -1,1 +1,8 @@
 *.img
+test-datasets/
+work/
+fastqc/
+.nextflow.*
+.nextflow/
+foobar.txt
+results/
