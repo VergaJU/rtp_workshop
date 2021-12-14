@@ -19,7 +19,7 @@ process FASTQC{
     publishDir "${params.outdir}/fastqc", mode: 'copy'
 
     input:
-    tuple val(base), file(reads) from ch_reads
+    tuple val(base), file(reads) from ch_qc_reads
 
     output:
     file("*.{html,zip}") into ch_multiqc
