@@ -6,3 +6,6 @@ work/
 results/
 dummy_files/
 test.nf
+foobar.txt
+old_main.fn
+test.html*
